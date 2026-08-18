@@ -1,0 +1,17 @@
+{
+  "name": "Factory Manager",
+  "short_name": "Factory Manager",
+  "start_url": "/Factory-Manager/",
+  "display": "standalone",
+  "background_color": "#f4f6f9",
+  "theme_color": "#19345f",
+  "description": "Factory material, production, labour and expense management",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
