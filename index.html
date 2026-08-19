@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111827">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Factory Manager</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f3f4f6;
+  color:#111827;
+}
+header{
+  background:#111827;
+  color:white;
+  padding:18px;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+header h1{margin:0;font-size:22px}
+header p{margin:5px 0 0;color:#cbd5e1;font-size:13px}
+
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:15px;
+}
+.card{
+  background:white;
+  border-radius:14px;
+  padding:16px;
+  margin-bottom:15px;
+  box-shadow:0 2px 8px #00000012;
+}
+h2{font-size:18px;margin-top:0}
+h3{font-size:15px}
+
+input,select,button{
+  width:100%;
+  padding:12px;
+  border-radius:9px;
+  border:1px solid #cbd5e1;
+  font-size:15px;
+  margin:5px 0;
+}
+button{
+  background:#2563eb;
+  color:white;
+  border:0;
+  font-weight:bold;
+}
+button.secondary{background:#475569}
+button.green{background:#16a34a}
+button.red{background:#dc2626}
+button.orange{background:#ea580c}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:10px;
+}
+.material-row{
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr;
+  gap:8px;
+  align-items:center;
+  margin-bottom:7px;
+}
+.material-row input{
+  margin:0;
+}
+.material-name{
+  font-weight:bold;
+  font-size:14px;
+}
+.small{
+  font-size:12px;
+  color:#64748b;
+}
+.total{
+  font-size:20px;
+  font-weight:bold;
+  margin-top:10px;
+}
+.stat{
+  background:#f8fafc;
+  border-radius:10px;
+  padding:12px;
+  text-align:center;
+}
+.stat b{
+  display:block;
+  font-size:20px;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:13px;
+}
+th,td{
+  border:1px solid #e2e8f0;
+  padding:8px;
+  text-align:left;
+}
+th{background:#e2e8f0}
+.badge{
+  display:inline-block;
+  background:#dbeafe;
+  color:#1d4ed8;
+  padding:4px 8px;
+  border-radius:20px;
+  font-size:11px;
+}
+.empty{
+  text-align:center;
+  color:#64748b;
+  padding:20px;
+}
+@media(max-width:600px){
+  .material-row{
+    grid-template-columns:1.2fr .8fr .8fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🏭 Factory Manager</h1>
+  <p>Raw Material • Operator Issue • Return • Production</p>
+</header>
+
+<div class="container">
+
+<!-- DATE / OPERATOR -->
+<div class="card">
+<h2>📅 Daily Entry</h2>
+
+<div class="grid">
+<div>
